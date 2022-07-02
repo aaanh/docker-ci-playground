@@ -9,15 +9,17 @@ export default function About() {
 			<blockquote class={tw`border-l-2 m-2 ml-0 p-2 italic text-gray-500`}>
 				I wrote this one...
 			</blockquote>
-			<p>This site is dockerized and deployed to Google Cloud Run.</p>
 			<p>
-				Checkout the{" "}
+				This site is dockerized, CI with Github Actions, and deployed to Google Cloud Run.
+			</p>
+			<p>
+				Check out the{" "}
 				<a class={tw`underline`} href="https://github.com/aaanh/fresh-copilot">
 					git repo here
 				</a>
 			</p>
 			<p>
-				Checkout{" "}
+				Check out{" "}
 				<a class={tw`underline`} href="https://aaanh.com">
 					my other works
 				</a>{" "}
