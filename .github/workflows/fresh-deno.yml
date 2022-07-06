@@ -5,7 +5,7 @@ on:
     push:
         branches: [master]
         paths:
-            - fresh-deno
+            - ./fresh-deno/**
     workflow_dispatch:
 
 jobs:
