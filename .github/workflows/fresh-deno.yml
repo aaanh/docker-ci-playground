@@ -5,6 +5,7 @@ on:
     push:
         branches: [master]
         paths:
+            - .github/**
             - ./fresh-deno/**
     workflow_dispatch:
 
@@ -32,6 +33,7 @@ jobs:
                   gcloud_service_key: ${{ secrets.GCLOUD_SERVICE_KEY }}
                   project_id: hoanganhdev
                   image_name: "fresh-copilot"
+                  context: ./fresh-deno
 
             - name: Image digest
               run: echo ${{ steps.docker_build.outputs.digest }}
