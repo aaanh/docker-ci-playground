@@ -1,9 +1,11 @@
-name: Build and Publish
+name: Fresh Deno
 
 on:
     # run it on push to the default repository branch
     push:
         branches: [master]
+        paths:
+            - fresh-deno
     workflow_dispatch:
 
 jobs:
@@ -11,6 +13,8 @@ jobs:
         name: Build Docker image and push to repositories
         # run only when code is compiling and tests are passing
         runs-on: ubuntu-latest
+        env:
+            working-directory: ./fresh-deno
 
         # steps to perform in job
         steps:
